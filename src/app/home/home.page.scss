@@ -1,27 +1,47 @@
-#container {
-  text-align: center;
+$primary-color: rgb(35, 106, 165);
+$secondary-color: rgb(201, 201, 201);
+$light-color: white;
+$dark-color: black;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+.calendario{
+    &__foto {
+    
+    }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+  &__mes {
+    font-size: 2rem;
+    color: $primary-color;
+  
+  }
 
-  color: #8c8c8c;
+  &__ano {
+    font-size: 2rem;
+    color: $primary-color;
+  }
 
-  margin: 0;
-}
+  &__dia-semana {
+    font-size: 1rem;
+    color: $primary-color;
+    color: $light-color;
+  }
 
-#container a {
-  text-decoration: none;
+  &__dia {
+    font-size: 1rem;
+    color: $dark-color;
+  }
+
+  &__coluna-dia{
+    border-color: $dark-color;
+    border-style: solid;
+    border-width: 1px;
+    background-color: $secondary-color;
+  }
+
+  &__coluna-dia-semana{
+    border-style: solid;
+    border-width: 1px;
+    border-color: $dark-color;
+    background-color: $primary-color;
+  }
 }
